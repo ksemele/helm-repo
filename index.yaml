@@ -3,7 +3,7 @@ entries:
   test-chart-01:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-25T16:32:07.570164007+04:00"
+    created: "2022-03-25T16:34:21.587752263+04:00"
     description: A Helm chart for Kubernetes
     digest: 6a9a8621a4c5ca48a7c2bd677467f679a7e2f79a87533aa5f4ad05a2cd980c57
     name: test-chart-01
@@ -14,10 +14,10 @@ entries:
   test-chart-02:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-25T16:32:07.569718753+04:00"
+    created: "2022-03-25T16:34:21.586951385+04:00"
     description: A Helm chart for Kubernetes with preinstall hook - test prehook on
       deploy
-    digest: a516acfd4e0f6bf55ee691b53a9fda683e2727dcaa5497f02c3ed7b746e88196
+    digest: ef94402cddd82fbab4d36ca12f7f5152836134270cacb0663bb49f354e61c6e6
     name: test-chart-02
     type: application
     urls:
@@ -25,7 +25,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-25T16:32:07.569449598+04:00"
+    created: "2022-03-25T16:34:21.586029666+04:00"
     description: A Helm chart for Kubernetes with preinstall hook
     digest: b310ae08baef78aa552ff64db7fa8bda4a169197b4330785ab97a50e59fd080e
     name: test-chart-02
@@ -35,7 +35,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-25T16:32:07.570428061+04:00"
+    created: "2022-03-25T16:34:21.588037471+04:00"
     description: A Helm chart for Kubernetes
     digest: e8a6378bff81245683a33ab5d02d00fb7ef5003cca4bb04ffd30f5bbfff7dcfd
     name: test-chart-02
@@ -43,4 +43,4 @@ entries:
     urls:
     - charts/test-chart-02-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-25T16:32:07.569094974+04:00"
+generated: "2022-03-25T16:34:21.585431728+04:00"
