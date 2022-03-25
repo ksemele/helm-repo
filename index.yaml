@@ -3,7 +3,7 @@ entries:
   test-chart-01:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-25T16:47:05.231898146+04:00"
+    created: "2022-03-25T16:50:13.403893133+04:00"
     description: A Helm chart for Kubernetes
     digest: 6a9a8621a4c5ca48a7c2bd677467f679a7e2f79a87533aa5f4ad05a2cd980c57
     name: test-chart-01
@@ -14,39 +14,39 @@ entries:
   test-chart-02:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-25T16:47:05.231377508+04:00"
+    created: "2022-03-25T16:50:13.406021806+04:00"
     description: A Helm chart for Kubernetes with preinstall hook - test prehook on
       deploy
     digest: 4bd3762c41a2acf59c1eadc07a7922dd40bc9144af0e4eabc44655cd73e08da1
     name: test-chart-02
     type: application
     urls:
-    - test-chart-02-0.2.2.tgz
+    - charts/test-chart-02-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-25T16:47:05.230955853+04:00"
+    created: "2022-03-25T16:50:13.405690827+04:00"
     description: A Helm chart for Kubernetes with preinstall hook - test prehook on
       deploy
     digest: ef94402cddd82fbab4d36ca12f7f5152836134270cacb0663bb49f354e61c6e6
     name: test-chart-02
     type: application
     urls:
-    - test-chart-02-0.2.1.tgz
+    - charts/test-chart-02-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-25T16:47:05.230626582+04:00"
+    created: "2022-03-25T16:50:13.405417653+04:00"
     description: A Helm chart for Kubernetes with preinstall hook
     digest: b310ae08baef78aa552ff64db7fa8bda4a169197b4330785ab97a50e59fd080e
     name: test-chart-02
     type: application
     urls:
-    - test-chart-02-0.2.0.tgz
+    - charts/test-chart-02-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-25T16:47:05.232231792+04:00"
+    created: "2022-03-25T16:50:13.40495214+04:00"
     description: A Helm chart for Kubernetes
     digest: e8a6378bff81245683a33ab5d02d00fb7ef5003cca4bb04ffd30f5bbfff7dcfd
     name: test-chart-02
@@ -54,4 +54,4 @@ entries:
     urls:
     - charts/test-chart-02-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-25T16:47:05.230113876+04:00"
+generated: "2022-03-25T16:50:13.403117732+04:00"
