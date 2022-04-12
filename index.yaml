@@ -3,18 +3,18 @@ entries:
   subchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-12T17:04:35.000698564+04:00"
+    created: "2022-04-12T18:40:21.030986688+04:00"
     description: A Helm chart for Kubernetes
     digest: 7cdaee4bf263931080ad8acf0d660475486678c8e39c334118e0600b4bfb3b0e
     name: subchart
     type: application
     urls:
-    - subchart-0.1.0.tgz
+    - charts/subchart-0.1.0.tgz
     version: 0.1.0
   test-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-12T17:04:35.001261141+04:00"
+    created: "2022-04-12T18:40:21.031893085+04:00"
     dependencies:
     - name: subchart
       repository: ""
@@ -23,6 +23,6 @@ entries:
     name: test-chart
     type: application
     urls:
-    - test-chart-0.1.0.tgz
+    - charts/test-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-04-12T17:04:34.999987546+04:00"
+generated: "2022-04-12T18:40:21.030408403+04:00"

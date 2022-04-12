@@ -81,6 +81,9 @@ tolerations: []
 
 affinity: {}
 
+# here changes (overrides) values from ./charts/subchart
+# you can check this by this command after deploy:
+# kubectl get svc
 subchart:
  service:
   type: NodePort
