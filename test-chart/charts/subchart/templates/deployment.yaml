@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "test-chart-01.fullname" . }}
+  name: {{ include "subchart.fullname" . }}
   labels:
-    {{- include "test-chart-01.labels" . | nindent 4 }}
+    {{- include "subchart.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
     matchLabels:
-      {{- include "test-chart-01.selectorLabels" . | nindent 6 }}
+      {{- include "subchart.selectorLabels" . | nindent 6 }}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
@@ -18,13 +18,13 @@ spec:
         {{- toYaml . | nindent 8 }}
       {{- end }}
       labels:
-        {{- include "test-chart-01.selectorLabels" . | nindent 8 }}
+        {{- include "subchart.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      serviceAccountName: {{ include "test-chart-01.serviceAccountName" . }}
+      serviceAccountName: {{ include "subchart.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
