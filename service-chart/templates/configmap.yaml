@@ -1,0 +1,41 @@
+{{- $files := .Files.Glob "*.json" }}
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: conf
+{{- $ns := .Release.Namespace}}
+# ------------------------------------------------------------------
+ns: {{ $ns }}
+
+{{- if eq $ns "d007" -}}
+{{- with .Values.dev }}
+ns-specific env:
+  {{- toYaml . | nindent 2 }}
+{{- end }}
+{{- end }}
+
+{{- if eq $ns "s007" -}}
+{{- with .Values.stage }}
+ns-specific env:
+  {{- toYaml . | nindent 2 }}
+{{- end }}
+{{- end }}
+
+{{- if eq $ns "p007" -}}
+{{- with .Values.prod }}
+ns-specific env:
+  {{- toYaml . | nindent 2 }}
+{{- end }}
+# ------------------------------------------------------------------
+data:
+  appsettings.json: {{ range .Files.Lines "appsettings.json" }}
+    {{ . }}{{ end }}
+# ------------------------------------------------------------------
+items:
+  {{- range $path, $fileContents := $files }}
+  - symbols: {{ $fileContents | len }}
+  - json: |-
+  {{ $.Files.Get $path | toYaml | indent 4 }}
+{{ end }}
+{{- end }}

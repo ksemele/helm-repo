@@ -1,0 +1,18 @@
+dev:
+  env: 'd007'
+  Source: "TEST"
+  QueuePrefix: "TEST"
+  Heartbeat: "60"
+  HeartbeatSplit: "true"
+  DetectAliveHeartbeatOnly: "true"
+  RabbitMQ__User: "dev.user"
+
+stage:
+  env: 's007'
+  Source: "ADF"
+  QueuePrefix: "ADF"
+  Heartbeat: "60"
+
+prod:
+  env: 'p007'
+  RabbitMQ__User: "prod.user"

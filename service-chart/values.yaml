@@ -1,0 +1,8 @@
+dev:
+  env: 'D007'
+
+stage:
+  env: 'S007'
+
+prod:
+  env: 'P007'
