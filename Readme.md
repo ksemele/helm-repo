@@ -70,8 +70,6 @@ $ helm search repo ksemele-helm
 NAME                         	CHART VERSION	APP VERSION	DESCRIPTION                
 ksemele-helm/service-chart   	0.1.0        	1.16.0     	A Helm chart for Kubernetes
 ksemele-helm/service-subchart	0.1.0        	1.16.0     	A Helm chart for Kubernetes
-ksemele-helm/subchart        	0.1.0        	1.16.0     	A Helm chart for Kubernetes
-ksemele-helm/test-chart      	0.1.0        	1.16.0     	A Helm chart for Kubernetes
 ```
 Then you can install charts from this repo like that:
 ```

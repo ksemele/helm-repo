@@ -3,7 +3,7 @@ entries:
   service-chart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-13T10:27:07.482445159+04:00"
+    created: "2022-04-13T10:44:03.168485065+04:00"
     description: A Helm chart for Kubernetes
     digest: 5741d2ff32164245f98af602071e5ad490732d0b52d9e011a2e9b98b6097cf73
     name: service-chart
@@ -14,7 +14,7 @@ entries:
   service-subchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-13T10:27:07.483167899+04:00"
+    created: "2022-04-13T10:44:03.169225502+04:00"
     dependencies:
     - name: subchart
       repository: ""
@@ -25,29 +25,4 @@ entries:
     urls:
     - charts/service-subchart-0.1.0.tgz
     version: 0.1.0
-  subchart:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-04-13T10:27:07.484104008+04:00"
-    description: A Helm chart for Kubernetes
-    digest: c240929931eefa365662718e68b8dde6fe72cdc3472bc5851491da4c877529f9
-    name: subchart
-    type: application
-    urls:
-    - charts/subchart-0.1.0.tgz
-    version: 0.1.0
-  test-chart:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2022-04-13T10:27:07.485146966+04:00"
-    dependencies:
-    - name: subchart
-      repository: ""
-    description: A Helm chart for Kubernetes
-    digest: e859ca51495c83f74a286064142f63925cebbc93815cbf4e6309fe89992594d4
-    name: test-chart
-    type: application
-    urls:
-    - charts/test-chart-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-04-13T10:27:07.482063416+04:00"
+generated: "2022-04-13T10:44:03.168139391+04:00"
