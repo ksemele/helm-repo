@@ -1,9 +1,9 @@
-# helm-repo
+# helm-repo [WIP]
 Test repo for Helm charts experiments.
 
 Follow this instructions to local run if you are download this repo.
 
-## subcharts
+# Subcharts
 Use this commands to see what it happened:
 
 ```
@@ -37,7 +37,7 @@ service-service-subchart-776b9b785c-sgj9w   1/1     Running   0          5s
 service-subchart-6cf4994db9-nnchs           1/1     Running   0          5s
 ```
 
-## environment related chart
+# Environment related chart
 Use this commands to see what it happened:
 ```
 $ helm template ./service-chart -f service-source-code/values.yaml --namespace d007  --debug
@@ -45,12 +45,12 @@ $ helm template ./service-chart -f service-source-code/values.yaml --namespace s
 $ helm template ./service-chart -f service-source-code/values.yaml --namespace p007  --debug
 ```
 
-## uninstall all charts
+# Uninstall all charts
 ```
 $ for each in $(helm list -q); do helm uninstall $each; done
 ```
 
-# Using this repo as Helm repo [WIP]
+# Using this repo as Helm repo
 
 ## Add repo
 ```
